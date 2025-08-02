@@ -99,7 +99,6 @@ class BatchProcessor:
                     if is_full or time_out:
                         self._process_batch()
 
-
         with self.condition:
             if self.batch:
                 self._process_batch()
